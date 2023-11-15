@@ -1,41 +1,237 @@
-
-.brand-logo{
-	width: 150px;
-	height: 80px;
+.brand-logo {
+  width: 150px;
+  height: 80px;
 }
 .bg-light {
-	background-color: #ffff!important;
+  background-color: #ffff !important;
 }
-.nav-link,.dropdown-item{
-	color: #1C3B97!important;
-	font-size: 16px!important;
+.nav-link,
+.dropdown-item {
+  color: #1c3b97 !important;
+  font-size: 16px !important;
 }
-.gap-5{
-	grid-gap:10px;
+.gap-5 {
+  grid-gap: 10px;
 }
 .navbar-nav > li:hover .dropdown-menu {
-    display: block;
+  display: block;
 }
 
 /*banner*/
- #carouselExampleIndicators {
-    position: relative;
-  }
+#carouselExampleIndicators {
+  position: relative;
+}
 
-  .carousel-item {
-    position: relative;
-  }
+.carousel-item {
+  position: relative;
+}
 
-  .carousel-item::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); /* Adjust the gradient colors and transparency as needed */
-  }
+.carousel-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  ); /* Adjust the gradient colors and transparency as needed */
+}
 
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  z-index: 1; /* Ensure the text is above the overlay */
+}
+.carousel-caption > h2,
+.carousel-caption > h5 {
+  color: white;
+  text-align: left;
+}
+.carousel-caption > h2 {
+  width: 700px;
+  word-wrap: break-word;
+  font-size: 50px;
+}
+
+/**/
+.why_choose > h3 {
+  color: #1c3b97;
+  font-weight: 700;
+}
+.why_choose > p {
+  font-size: 16px;
+}
+.card-header {
+  background-color: #4266c9 !important;
+  border-bottom: 0 !important;
+}
+.card-text {
+  color: #ffff !important;
+}
+/* we best*/
+
+.icon-circle {
+  font-size: 50px;
+  border: 1px solid #d5d5d5;
+  height: 89px;
+  width: 89px;
+  text-align: center;
+  line-height: 89px;
+  left: 0;
+  top: 0;
+  border-radius: 100%;
+  display: block;
+}
+
+.bg-primo {
+  background-color: #33b569;
+  color: white;
+}
+
+.bg-alumini,
+.bg-oar,
+.bg-emi {
+  background-color: #4266c9;
+  min-height: 100px;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+.bg-alumini:hover,
+.bg-oar:hover,
+.bg-emi:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.bg-oar {
+  background-color: #33b569;
+}
+.bg-emi {
+  background-color: #2f3331;
+}
+.post-bottom a {
+  text-decoration: none;
+  color: black;
+}
+.blog-post h5 {
+  color: #4266c9;
+}
+.overlay {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+.inst_card {
+  min-height: 170px;
+  background-color: #19b5fe;
+  padding: 15px;
+  border-radius: 5px;
+  color: white;
+}
+.inst_chennai {
+  background-color: #f08446;
+}
+.inst_ramnad {
+  background-color: #33b569;
+}
+
+/*footer*/
+
+.footer-bg {
+  background-color: #222222;
+  color: #7f7f7f;
+}
+.footer-bg a {
+  text-decoration: none;
+  color: #7f7f7f;
+}
+.footer-bg .cust_icon {
+  font-size: 1.3em;
+}
+.footer-bg h5 {
+  color: #f0eded;
+  margin-bottom: 30px;
+}
+.blog-link {
+  list-style-type: none;
+  padding: 6px 0px;
+}
+.blog-link li {
+  padding-bottom: 10px;
+}
+
+.icons-hover-black {
+  padding-top: 10px;
+}
+.icons-hover-black i {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  margin-bottom: 15px;
+  display: inline-block;
+  margin-right: 1px;
+  border-radius: 50%;
+  background: #1d1d1d;
+  color: #fff;
+}
+.entry-title {
+  margin-left: 20px;
+}
+.post-meta {
+  font-size: 0.7rem;
+  margin-left: 1.8em;
+  margin-top: -1em;
+}
+.post-type-post {
+  padding-top: 10px;
+}
+
+.newsletter .content .form-control {
+  height: 50px;
+  border-color: #ffffff;
+  border-radius: 0;
+}
+.newsletter .content.form-control:focus {
+  box-shadow: none;
+  border: 2px solid #243c4f;
+}
+.newsletter .content .btn {
+  min-height: 50px;
+  border-radius: 0;
+  background: #243c4f;
+  color: #fff;
+  font-weight: 600;
+}
+.input-group > .custom-select:not(:last-child),
+.input-group > .form-control:not(:last-child) {
+  box-shadow: none;
+  border: none;
+}
+.btn:not(:disabled):not(.disabled) {
+  box-shadow: none;
+  border: none;
+}
+.input-group-btn .btn {
+  border-radius: 0 !important;
+  border-bottom-right-radius: 3px !important;
+  border-top-right-radius: 3px !important;
+  font-family: revert;
+}
+.foot-bg {
+  background-color: #1d1d1d;
+}
+.foot-bg p {
+  font-size: 14px;
+  color: #7f7f7f;
+}
+@media (max-width: 767px) {
   .carousel-caption {
     position: absolute;
     top: 50%;
@@ -45,209 +241,18 @@
     color: #fff;
     z-index: 1; /* Ensure the text is above the overlay */
   }
-  .carousel-caption>h2,  .carousel-caption>h5{
-color: white;
-  	text-align: left;
+  .carousel-caption > h2,
+  .carousel-caption > h5 {
+    color: white;
+    text-align: left;
   }
-   .carousel-caption>h2{
-    width: 700px;
+
+  .carousel-caption > h5 {
+    font-size: 1rem;
+  }
+  .carousel-caption > h2 {
+    width: 230px;
     word-wrap: break-word;
-    font-size: 50px;
-
-   }
-
-/**/
-.why_choose>h3{
-	color: #1C3B97;
-	font-weight: 700;
-}
-.why_choose>p{
-	font-size: 16px;
-}
-.card-header{
-	background-color:#4266C9!important;
-	border-bottom:0 !important;
-	}
-	.card-text{
-		color: #ffff!important;
-
-	}
-/* we best*/
-
-
-.icon-circle {
-	font-size: 50px;
-	border: 1px solid #d5d5d5;
-	height: 89px;
-	width: 89px;
-	text-align: center;
-	line-height: 89px;
-	left: 0;
-	top: 0;
-	border-radius: 100%;
-	display: block;
-}
-
-.bg-primo{
-	background-color:#33B569;
-	color: white;
-}
-
-.bg-alumini, .bg-oar,.bg-emi{
-	background-color: #4266c9;
-	min-height: 100px;
-	color: white;
-text-decoration: none;
-cursor: pointer;
-}
-.bg-alumini:hover, .bg-oar:hover,.bg-emi:hover{
-text-decoration: none;
-color: white;
-}
-
-.bg-oar{
-	background-color: #33b569;
-}
-.bg-emi{
-	background-color: #2f3331;
-}
-.post-bottom a{
-	text-decoration:none;
-	color: black
-}
-.blog-post h5{
-	color: #4266C9;
-}
-.overlay{
-	margin-left: 0!important;
-	margin-right: 0!important;
-}
-.inst_card{
-	max-height: 300px;
-	background-color:#19B5FE;
-	padding: 15px;
-	border-radius: 5px;
-	color: white;
-}
-.inst_chennai{
-background-color: #f08446;
-}
-.inst_ramnad{
-background-color: #33B569;
-}
-
-/*footer*/
-
-.footer-bg{
-	    background-color: #222222;
-	    color: #7f7f7f;
-}
-.footer-bg a{
-	text-decoration: none;
-	color: #7f7f7f;
-}
-.footer-bg .cust_icon{
-	font-size: 1.3em;
-}
-.footer-bg h5 {
-    color: #f0eded;
-    margin-bottom: 30px;
-}
-.blog-link{
-	list-style-type: none;
-	padding: 6px 0px;
-}
-.blog-link li{
-padding-bottom: 10px;
-}
-
-.icons-hover-black {
-    padding-top: 10px;
-}
-.icons-hover-black i {
-    width: 30px;
-    height: 30px;
-    text-align: center;
-    line-height: 30px;
-    margin-bottom: 15px;
-    display: inline-block;
-    margin-right: 1px;
-    border-radius: 50%;
-    background: #1D1D1D;
-    color: #fff;
-}
-.entry-title{
-	margin-left: 20px;
-}
-.post-meta{
-	    font-size: 0.7rem;
-    margin-left: 1.8em;
-    margin-top: -1em;
-}
-.post-type-post{
-	padding-top: 10px;
-}
-
-
-.newsletter .content .form-control {
-height: 50px;
-border-color: #ffffff;
-border-radius:0;
-}
-.newsletter .content.form-control:focus {
-box-shadow: none;
-border: 2px solid #243c4f;
-}
-.newsletter .content .btn {
-min-height: 50px; 
-border-radius:0;
-background: #243c4f;
-color: #fff;
-font-weight:600;
-}
-.input-group>.custom-select:not(:last-child), .input-group>.form-control:not(:last-child){
-	box-shadow: none;
-	border: none;
-}
-.btn:not(:disabled):not(.disabled) {
-	box-shadow: none;
-	border: none;
-}
-.input-group-btn .btn {
-	border-radius: 0!important;
-	border-bottom-right-radius: 3px!important;
-	border-top-right-radius: 3px!important;
-	font-family: revert;
-}
-.foot-bg{
-	background-color: #1D1D1D;
-}
-.foot-bg p{
-	font-size: 14px;
-	color: #7f7f7f;
-}
-
-
-  @media (max-width: 767px) {
-
-  .carousel-caption {
-    position: absolute;
-    top: 30%;
-    left: 40%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #fff;
-    z-index: 1; /* Ensure the text is above the overlay */
+    font-size: 30px;
   }
-  .carousel-caption>h2,  .carousel-caption>h5{
-color: white;
-  	text-align: left;
-  }
-   .carousel-caption>h2{
-    width: 700px;
-    word-wrap: break-word;
-    font-size: 20px;
-
-   }
-
 }
